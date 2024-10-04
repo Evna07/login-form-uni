@@ -19,7 +19,6 @@ const Register = () => {
         type="password"
         placeholder="Confirm password"
       />
-
       <div>
         <div>
           <input type="checkbox" name="remember" id="" />
@@ -33,8 +32,9 @@ const Register = () => {
             Quam phasellus sit, tempor praesent vehicula cursus laoreet blandit!
           </label>
         </div>
-        <button className={styles.button}>Create Account</button>
       </div>
+
+      <button className={styles.button}>Create Account</button>
     </div>
   );
 };

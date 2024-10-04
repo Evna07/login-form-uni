@@ -6,8 +6,8 @@ const Form = () => {
   return (
     <div>
       <fieldset className={styles.fieldSet}>
-        {/* <Login></Login> */}
-        <Register></Register>
+        <Login></Login>
+        {/* <Register></Register> */}
       </fieldset>
     </div>
   );

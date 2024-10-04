@@ -1,17 +1,5 @@
 .fieldSet {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
   border: none;
   width: 360px;
-
-  .field {
-    padding: 10px;
-    background-color: #f0fff1;
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-  }
 }

@@ -1,15 +1,13 @@
 import styles from "./Form.module.scss";
+import Login from "./Login/Login";
+import Register from "./Register/Register";
 
 const Form = () => {
   return (
     <div>
       <fieldset className={styles.fieldSet}>
-        <input className={styles.field} type="text" placeholder="Username" />
-        <input
-          className={styles.field}
-          type="password"
-          placeholder="Password"
-        />
+        {/* <Login></Login> */}
+        <Register></Register>
       </fieldset>
     </div>
   );

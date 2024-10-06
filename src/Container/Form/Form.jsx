@@ -7,13 +7,18 @@ const Form = () => {
   const [showLogin, setShowLogin] = useState(true); // State to toggle between forms
 
   return (
-    <div>
+    <div className={styles.form}>
       <fieldset className={styles.fieldSet}>
         {showLogin ? <Login /> : <Register />}
       </fieldset>
-      {/* Buttons to toggle between login and registration */}
-      <button onClick={() => setShowLogin(true)}>Go to Login</button>
-      <button onClick={() => setShowLogin(false)}>Go to Register</button>
+      <div>
+        <button className={styles.button} onClick={() => setShowLogin(true)}>
+          Go to Login
+        </button>
+        <button className={styles.button} onClick={() => setShowLogin(false)}>
+          Go to Register
+        </button>
+      </div>
     </div>
   );
 };

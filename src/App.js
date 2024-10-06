@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Form from "./Container/Form/Form";
+import Container from "./Container/Container";
 import Logged from "./Logged/Logged";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Form />} />
+        <Route path="/" element={<Container />} />
         <Route path="/logged" element={<Logged />} />
       </Routes>
     </Router>

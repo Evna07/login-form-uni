@@ -2,7 +2,6 @@ import styles from "./Login.module.scss";
 import { useState } from "react";
 import { findUser } from "../../../data";
 import { useNavigate } from "react-router-dom";
-import(useNavigate);
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -29,10 +28,11 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className={styles.login}>
       <h1>User Login</h1>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.login} onSubmit={handleSubmit}>
         <input
+          className={styles.field}
           type="email"
           name="email"
           placeholder="Email"
@@ -40,13 +40,16 @@ const Login = () => {
           onChange={handleChange}
         />
         <input
+          className={styles.field}
           type="password"
           name="password"
           placeholder="Password"
           value={credentials.password}
           onChange={handleChange}
         />
-        <button type="submit">Login</button>
+        <button className={styles.button} type="submit">
+          Login
+        </button>
       </form>
     </div>
   );

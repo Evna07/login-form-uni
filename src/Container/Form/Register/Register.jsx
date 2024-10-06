@@ -45,8 +45,9 @@ const Register = () => {
   return (
     <div className={styles.register}>
       <h1>User Registration</h1>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.register} onSubmit={handleSubmit}>
         <input
+          className={styles.field}
           type="text"
           name="username"
           placeholder="Username"
@@ -54,6 +55,7 @@ const Register = () => {
           onChange={handleChange}
         />
         <input
+          className={styles.field}
           type="text"
           name="firstName"
           placeholder="First Name"
@@ -61,6 +63,7 @@ const Register = () => {
           onChange={handleChange}
         />
         <input
+          className={styles.field}
           type="text"
           name="lastName"
           placeholder="Last Name"
@@ -68,6 +71,7 @@ const Register = () => {
           onChange={handleChange}
         />
         <input
+          className={styles.field}
           type="email"
           name="email"
           placeholder="Email"
@@ -75,6 +79,7 @@ const Register = () => {
           onChange={handleChange}
         />
         <input
+          className={styles.field}
           type="password"
           name="password"
           placeholder="Password"
@@ -82,13 +87,16 @@ const Register = () => {
           onChange={handleChange}
         />
         <input
+          className={styles.field}
           type="password"
           name="confirmPassword"
           placeholder="Confirm Password"
           value={formData.confirmPassword}
           onChange={handleChange}
         />
-        <button type="submit">Create Account</button>
+        <button className={styles.button} type="submit">
+          Create Account
+        </button>
       </form>
     </div>
   );

@@ -1,4 +1,6 @@
-.container {
+.formContainer {
+  margin: auto;
+
   width: 460px;
   height: 580px;
   background-color: #b3e9c7;
@@ -9,13 +11,4 @@
   align-items: center;
   gap: 30px;
   //   justify-content: center;
-
-  .button {
-    padding: 10px;
-    width: 220px;
-    border-radius: 10px;
-    border: none;
-    background-color: #8367c7;
-    color: #fbfaff;
-  }
 }

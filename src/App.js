@@ -1,10 +1,15 @@
-import Container from "./Container/Container";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Form from "./Container/Form/Form";
+import Logged from "./Logged/Logged";
 
 function App() {
   return (
-    <div className="container">
-      <Container></Container>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Form />} />
+        <Route path="/logged" element={<Logged />} />
+      </Routes>
+    </Router>
   );
 }
 
